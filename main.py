@@ -55,7 +55,7 @@ fig.update_layout(
     },
     title_font=dict(size=24, color='white', family="Courier New, monospace"),
     xaxis=dict(title='Date', title_font=dict(size=18, color='white', family="Courier New, monospace"), tickfont=dict(size=14, color='white', family="Courier New, monospace")),
-    yaxis=dict(title='Value', title_font=dict(size=18, color='white', family="Courier New, monospace"), tickfont=dict(size=14, color='white', family="Courier New, monospace")),
+    yaxis=dict(title='TVL', title_font=dict(size=18, color='white', family="Courier New, monospace"), tickfont=dict(size=14, color='white', family="Courier New, monospace")),
     legend=dict(yanchor="top", y=1, xanchor="left", x=1, font=dict(size=16, color='white', family="Courier New, monospace")),
     template='plotly_dark',
     images=[dict(
@@ -69,3 +69,4 @@ fig.update_layout(
 
 # Save the plot as an HTML file and display the figure
 fig.write_html("index.html")
+df.to_csv('data.csv', index=False)
