@@ -69,4 +69,3 @@ fig.update_layout(
 
 # Save the plot as an HTML file and display the figure
 fig.write_html("index.html")
-fig.show()
